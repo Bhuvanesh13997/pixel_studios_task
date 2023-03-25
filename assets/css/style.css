@@ -17,10 +17,6 @@ body{
 html {
     scroll-behavior: smooth;
 }
-::selection{
-    color: #ffffff;
-    background-color: crimson;
-}
 .wrapper{
     width: 100%;
     
@@ -43,9 +39,6 @@ html {
 :root{
     --font-large-color:#000000;
     --font-small-color:#9f9f9f;
-    --main-color:#FF2626;
-    --bg-color-1:#131416;
-    --bg-color-2:#191a20;
 }
 
 p,span{
@@ -55,7 +48,6 @@ p,span{
 a{
     text-decoration: none !important;
 }
-
 .heading{
     color: var(--font-large-color);
 }
@@ -123,36 +115,12 @@ header nav .navbar-brand span{
     font-size: 16px;
     font-weight: 600 !important;
 }
-
 .nav-link:hover{
     color: #414141;
+    font-weight: 700;
 }
-.active_link{
-    border-bottom: 2px solid crimson;
-    font-weight: 500;
-}
-.nav_close {
-    position: absolute;
-    right: 1rem;
-    top: 0.6rem;
-}
-
-.nav_toggle{
-    color: #ffffff;
-    font-size: 20px;
-    font-weight: 100;
-}
-
-
 .offcanvas{
     --bs-offcanvas-width:300px !important;
-}
-
-
-@media screen and (max-width:991px) {
-    .nav-item{
-        text-align: center;
-    }
 }
 
 /* Home Section */
@@ -160,25 +128,6 @@ header nav .navbar-brand span{
 .Hero_section{
     width: 100%;
     padding: 65px 0 0 0 !important;
-}
-.Hero_section .text_holder{
-    width: 100%;
-    text-align: center;
-}
-.Hero_section .text_holder .name{
-    font-weight: 400;
-    font-size: 90px;
-}
-.Hero_section .text_holder .name span{
-    color: var(--main-color);
-    font-size: 90px;
-}
-.Hero_section .text_holder .designation{
-    font-weight: 300;
-}
-.Hero_section .text_holder .designation span{
-    color: var(--main-color);
-    font-size: 34px;
 }
 .Hero_section .navigation_panel{
     position: absolute;
@@ -308,27 +257,6 @@ header nav .navbar-brand span{
     width: 100%;
     height: 100%;
 }
-.LookingFor_section .card .skill_level{
-    position: absolute;
-    top: 60px;
-    right: 50px;
-    height: 80px;
-    width: 80px;
-    border: 5px solid #ffffff;
-    border-radius: 50%;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.LookingFor_section .card .card-body ._title{
-    font-size: 20px;
-    margin: 0 0 5px 0;
-}
-.LookingFor_section .card .card-body ._description{
-    font-size: 14px !important;
-    color: #A3A3A3;
-}
 .LookingFor_section .card .card-footer{
     background-color: transparent;
     border: 0;
@@ -363,7 +291,7 @@ header nav .navbar-brand span{
     justify-content: center;
 }
 
-/*Footer*/
+/**************** Footer *********************/
 
 .Footer{
     background-color: #414141;
@@ -412,24 +340,7 @@ header nav .navbar-brand span{
 
 /************* Responsive ****************/
 
-@media screen and (max-width:991px){
-    .section_heading{
-        font-size: 24px !important;
-    }
-    .WhoAreWe_section .text_column{
-        margin-bottom: 50px;
-    }
-    .LookingFor_section{
-        background: #ffffff;
-    }
-    .Relationship_section .description{
-        font-size: 14px;
-    }
-    
-}
-
-
-
+/* Mobile */
 @media screen and (max-width:576px){
     .Hero_section .navigation_panel {
         bottom: 5px;
@@ -460,6 +371,29 @@ header nav .navbar-brand span{
         display: none;
     }
 }
+
+/*Upto 991px*/
+
+@media screen and (max-width:991px){
+    .nav-item{
+        text-align: center;
+    }
+    .section_heading{
+        font-size: 24px !important;
+    }
+    .WhoAreWe_section .text_column{
+        margin-bottom: 50px;
+    }
+    .LookingFor_section{
+        background: #ffffff;
+    }
+    .Relationship_section .description{
+        font-size: 14px;
+    }
+    
+}
+
+
 
 @media screen and (min-width:991px) and (max-width:1200px) {
     .LookingFor_section .card .card-header {
