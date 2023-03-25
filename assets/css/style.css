@@ -367,6 +367,9 @@ header nav .navbar-brand span{
     .Relationship_section .content_row img{
         max-width: 80px;
     }
+    .Footer .copyrights{
+        width: 100%;
+    }
     .hide{
         display: none;
     }
