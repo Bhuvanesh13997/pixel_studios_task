@@ -1,0 +1,468 @@
+/*********** Google Fonts - Nunito ***********/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+
+/************ CSS Reset Settings ************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    letter-spacing: 0.4px;
+    font-size: 16px !important;
+}
+html {
+    scroll-behavior: smooth;
+}
+::selection{
+    color: #ffffff;
+    background-color: crimson;
+}
+.wrapper{
+    width: 100%;
+    
+}
+
+/************ Scroll Bar ************/
+
+::-webkit-scrollbar{
+    width: 5px;
+    background-color: #000000;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #bfbfbf;
+    border-radius: 10px;
+}
+
+
+/************ CSS Variables ************/
+
+:root{
+    --font-large-color:#000000;
+    --font-small-color:#9f9f9f;
+    --main-color:#FF2626;
+    --bg-color-1:#131416;
+    --bg-color-2:#191a20;
+}
+
+p,span{
+    color: var(--font-small-color);
+    margin-bottom: 0 !important;
+}
+a{
+    text-decoration: none !important;
+}
+
+.heading{
+    color: var(--font-large-color);
+}
+
+/************ Reuseable Classes ************/
+
+.button{
+    background-color: transparent;
+    font-size: 17px;
+    outline: none;
+    border-radius: 24px;
+    border: 1px solid #c5c5c5;
+    padding: 8px 20px;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+    font-weight: 400;
+    color: #747474;
+}
+
+.button:hover{
+    background-color: #5f5f5f;
+    color: #ffffff;
+    border-color: #5f5f5f;
+}
+
+
+
+/* Navbar */
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 0 20px;
+    box-shadow: 0 -1px 4px rgba(0,0,0,0.15);
+}
+header nav{
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.15);
+}
+header nav .navbar-brand .brandLogo{
+    width: 40px;
+}
+header nav .navbar-brand span{
+    font-size: 16px;
+    color: #313131;
+    font-weight: 700;
+}
+.nav-item{
+    margin: 0 5px;
+}
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600 !important;
+}
+
+.nav-link:hover{
+    color: #414141;
+}
+.active_link{
+    border-bottom: 2px solid crimson;
+    font-weight: 500;
+}
+.nav_close {
+    position: absolute;
+    right: 1rem;
+    top: 0.6rem;
+}
+
+.nav_toggle{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
+.offcanvas{
+    --bs-offcanvas-width:300px !important;
+}
+
+
+@media screen and (max-width:991px) {
+    .nav-item{
+        text-align: center;
+    }
+}
+
+/* Home Section */
+
+.Hero_section{
+    width: 100%;
+    padding: 65px 0 0 0 !important;
+}
+.Hero_section .text_holder{
+    width: 100%;
+    text-align: center;
+}
+.Hero_section .text_holder .name{
+    font-weight: 400;
+    font-size: 90px;
+}
+.Hero_section .text_holder .name span{
+    color: var(--main-color);
+    font-size: 90px;
+}
+.Hero_section .text_holder .designation{
+    font-weight: 300;
+}
+.Hero_section .text_holder .designation span{
+    color: var(--main-color);
+    font-size: 34px;
+}
+.Hero_section .navigation_panel{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 0 auto;
+}
+.Hero_section .carousel-indicators{
+    position: static !important;
+    justify-content: start !important;
+    margin: 0 !important;
+    filter: invert(1);
+}
+.Hero_section .arrows_group{
+    display: flex;
+}
+.Hero_section .arrows_group > button{
+    position: static;
+    width: unset;
+    opacity: 1;
+    margin: 0 10px;
+    filter: invert(1);
+}
+
+/*WhoAreWe_section*/
+
+.WhoAreWe_section{
+    background-color: #ffffff;
+    padding: 50px 0;
+}
+.WhoAreWe_section .content_row{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.WhoAreWe_section .text_column{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.WhoAreWe_section .text_column .heading{
+    font-size: 20px;
+    color: var(--font-small-color);
+}
+.WhoAreWe_section .text_column .sub_heading{
+    font-size: 26px;
+}
+.WhoAreWe_section .img_column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.WhoAreWe_section .img_column > div > div{
+    position: relative;
+    width: 350px;
+    height: 370px;
+}
+
+.WhoAreWe_section .img_column .pinkBox{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 50px;
+    top: 50px;
+    background-color: #fa0462;
+    padding: 40px;
+    color: #ffffff;
+    width: 300px;
+    height: 320px;
+    z-index: 10;
+}
+.WhoAreWe_section .img_column .pinkBox h2{
+    font-weight: 400;
+}
+.WhoAreWe_section .img_column .pinkBox p{
+    color: #ffffff;
+}
+.WhoAreWe_section .img_column .designBox{
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 50px;
+    bottom: 50px;
+    background-color: #999999;
+    width: 300px;
+    height: 320px;
+    z-index: 5;
+}
+
+
+/***************************** LookingFor Section ***********************/
+
+.LookingFor_section{
+    background: linear-gradient(to bottom, #f2f2fa 40%, #ffffff 0%);
+    padding: 80px 0 100px 0;
+    text-align: center;
+    border-bottom: 1px solid #ebebeb;
+}
+.LookingFor_section .section_heading{
+    font-size: 34px;
+    margin-bottom: 40px;
+}
+.LookingFor_section .content_row > div{
+    display: flex;
+    justify-content: center;
+}
+.LookingFor_section .card{
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    text-align: left;
+}
+.LookingFor_section .card .card-header{
+    position: relative;
+    height: 250px;
+    border-bottom: 0;
+    padding: 0;
+    border-radius: 0;
+}
+.LookingFor_section .card .card-header img{
+    width: 100%;
+    height: 100%;
+}
+.LookingFor_section .card .skill_level{
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    height: 80px;
+    width: 80px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.LookingFor_section .card .card-body ._title{
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+.LookingFor_section .card .card-body ._description{
+    font-size: 14px !important;
+    color: #A3A3A3;
+}
+.LookingFor_section .card .card-footer{
+    background-color: transparent;
+    border: 0;
+}
+
+/***************************** Relationship Section ***********************/
+
+.Relationship_section{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 80px 0 100px 0;
+    text-align: center;
+}
+.Relationship_section .section_heading{
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.Relationship_section .description{
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.Relationship_section .content_row{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+.Relationship_section .content_row > div{
+    display: flex;
+    justify-content: center;
+}
+
+/*Footer*/
+
+.Footer{
+    background-color: #414141;
+    padding: 20px 20px;
+    font-weight: 600;
+}
+.Footer .content_row{
+    padding: 30px 20px 40px 20px;
+}
+.Footer .content_row .text_column{
+    padding-bottom: 30px;
+}
+.Footer .content_row .text_column h3{
+    font-size: 20px;
+    color: var(--font-small-color);
+    margin-bottom: 20px !important;
+    position: relative;
+}
+.Footer .content_row .text_column h3::before {
+    content: '';
+    position: absolute;
+    bottom: -4px; 
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: var(--font-small-color);
+}
+.Footer .social_media i{
+    margin: 0 5px;
+    font-size: 20px;
+    color: var(--font-small-color);
+}
+.Footer .social_media i:hover{
+    filter: invert(1);
+    cursor: pointer;
+}
+.Footer .copyrights{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 1px solid var(--font-small-color);
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+
+/************* Responsive ****************/
+
+@media screen and (max-width:991px){
+    .section_heading{
+        font-size: 24px !important;
+    }
+    .WhoAreWe_section .text_column{
+        margin-bottom: 50px;
+    }
+    .LookingFor_section{
+        background: #ffffff;
+    }
+    .Relationship_section .description{
+        font-size: 14px;
+    }
+    
+}
+
+
+
+@media screen and (max-width:576px){
+    .Hero_section .navigation_panel {
+        bottom: 5px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .WhoAreWe_section .img_column > div > div {
+        position: relative;
+        width: 300px;
+        height: 320px;
+    }
+    .WhoAreWe_section .img_column .pinkBox{
+        width: 250px;
+        height: 270px;
+        padding: 25px;
+    }
+    .WhoAreWe_section .img_column .designBox{
+        width: 250px;
+        height: 270px;
+    }
+    .LookingFor_section .card .card-header {
+        height: 200px;
+    }
+    .Relationship_section .content_row img{
+        max-width: 80px;
+    }
+    .hide{
+        display: none;
+    }
+}
+
+@media screen and (min-width:991px) and (max-width:1200px) {
+    .LookingFor_section .card .card-header {
+        height: 200px;
+    }
+}

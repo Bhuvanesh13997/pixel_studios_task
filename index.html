@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/images/brand_logos/1603810226519.jfif" />
+    <title>Pixel Studios Task</title>
+    
+    <!--CSS Link-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--Bootstrap 5.2 CSS CDN Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--Bootstrap 5.2 JS CDN Link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!--AOS CSS Link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+</head>
+<body>
+   
+    <div class="wrapper">
+
+        <!--Navbar-->
+        <header id="header" class="container-fluid">
+
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assets/images/brand_logos/1603810226519.jfif" class="img-fluid brandLogo"/> 
+                        <span>Pixel Studios</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                            <a class="navbar-brand">
+                                <img src="./assets/images/brand_logos/1603810226519.jfif" class="img-fluid brandLogo"/> 
+                                <span>Pixel Studios</span>
+                            </a>
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/range">Range</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/strengths">Strengths</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/infrastructure">Infrastructure</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/social_consciousness">Social</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/careers">Careers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact">Contact</a>
+                            </li>
+                        </ul>
+                        
+                        </div>
+                    </div>
+                </div>
+              </nav>
+        </header>
+
+
+        <!---------------------------------- Banner / Hero Section -------------------------------->
+
+        <section class="Hero_section container-fluid section" id="home">  
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./assets/images/banner_slides/packed-products-range.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/images/banner_slides/hanson-cement-packed-products_0.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./assets/images/banner_slides/hanson-packed-products-1920x860.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                </div>
+                <div class="navigation_panel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="arrows_group">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------------------------------- Who Are We Section ----------------------------------->
+
+        <section class="WhoAreWe_section container-fluid" id="aboutUs">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                <div class="content_row row">
+                    <div class="col-12 col-lg-6 col-xl-7 text_column" data-aos="fade-up" data-aos-duration="1000">
+                        <div>
+                            <h6 class="heading">Who we are</h6>
+                            <h2 class="sub_heading">India's Largest Contract Manufacturer Of Personal Care Products.</h2>
+                            
+                            <p class="description mb-4">
+                                We slip under the skin of your brands to help bring them to life. We've refined the 
+                                manufacture of personal care products into a fine art by treating every one of our customers' 
+                                brands as our own. With full involvement from the formulation stage, right down to packaging 
+                                and testing, we craft a final product worthy of your brand.
+                            </p>
+                            <button class="button">Read More</button>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-xl-5 img_column" data-aos="fade-up" data-aos-duration="1000">
+                        <div>
+                            <div>
+                                <div class="pinkBox">
+                                    <h2>Vision</h2>
+                                    <p>To make India proud by setting and sustaining high standards of trust, delivering high quality products and solutions designed for
+                                        holistic well-being.
+                                    </p>
+                                </div>
+                                <div class="designBox"></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------------------------------- What are you looking for Section ------------------------------------->
+
+        <section class="LookingFor_section container-fluid section" id="skills">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="section_heading">What Are You Looking For?</h2>
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <img src="./assets/images/products/KIWI-Kisan-Windows-product-range-2-1024x791.jpg" class="img-fluid" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Turnkey Solutions</h5>
+                                <p class="card-text">With you at every stage</p>
+                                <p>We deliver turnkey solutions from concept to implementation. If you're
+                                looking for formulation, manufacturing, filling and packaging services
+                                for your full-range personal care products, we can help. Our
+                                large-volume production capability, meeting stringent quality
+                                standards helps customers around the world meet their goals.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="button">Read More</button>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <img src="./assets/images/products/machinery.jpg" class="img-fluid" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Contract Manufacturer</h5>
+                                <p class="card-text">We will handle it for you</p>
+                                <p>Looking to contract out part of the production? We are ready with our
+                                state-of-the-art manufacturing plants and the know-how of our expert
+                                team to offer highly flexible and versatile services, with the promise of
+                                on-time delivery. When you outsource to us, we take
+                                complete ownership so you can focus.
+                                </p>                            
+                            </div>
+                            <div class="card-footer">
+                                <button class="button">Read More</button>
+                            </div>                        
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <div class="card-header">
+                                <img src="./assets/images/products/Jafra-Brightening-Range-Review-Price-Buy-Online-India.jpg" class="img-fluid" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Product Development</h5>
+                                <p class="card-text">Creating for your market</p>
+                                <p>Designing a personal care product to meet your market requirement
+                                involves many elements. We develop products to match your target
+                                and to meet regulations, costs and chemical properties. You can
+                                prepare for the product launch while we test it for safety, quality and
+                                compliance.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <button class="button">Read More</button>
+                            </div>                        
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+
+        <!----------------------------------- Relationship Section ------------------------------------->
+
+        <section class="Relationship_section container-fluid section" id="skills">
+            <div class="container" data-aos="fade-up" data-aos-duration="1000">
+                <h2 class="section_heading">Relationship Of Trust</h2>
+                <p class="description">Some of the most respected names in the international cosmetics and personal care space trust us with their brands</p>
+
+                <div class="row content_row g-3">
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                        <img src="./assets/images/brand_logos/honda.png" class="img-fluid"/>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                        <img src="./assets/images/brand_logos/sony (1).png" class="img-fluid"/>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                        <img src="./assets/images/brand_logos/sony.png" class="img-fluid"/>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                        <img src="./assets/images/brand_logos/nivea.png" class="img-fluid"/>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                        <img src="./assets/images/brand_logos/yamaha.png" class="img-fluid"/>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                        <img src="./assets/images/brand_logos/bajaj.png" class="img-fluid"/>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                        <img src="./assets/images/brand_logos/bmw.png" class="img-fluid"/>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                        <img src="./assets/images/brand_logos/coca.png" class="img-fluid"/>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                        <img src="./assets/images/brand_logos/pepsi.png" class="img-fluid"/>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 col-xl-2">
+                        <img src="./assets/images/brand_logos/suzuki.png" class="img-fluid"/>
+                    </div>                        
+                </div>
+
+                <button class="button">Read More</button>                    
+            </div>
+        </section>
+
+        <!----------------------------- Footer --------------------------------->
+
+        <section class="Footer container-fluid" >
+            <div class="container">
+                <div class="row content_row">
+                    <div class="text_column col-12 col-sm-6 col-lg-3">
+                        <div>
+                            <h3>Locations</h3>
+                            <p>Industrial Estate, Guindy, Chennai.</p>
+                            <p>+91-44-22500588</p>
+                        </div>
+                    </div>
+                    <div class="text_column col-12 col-sm-6 col-lg-3">
+                        <div>
+                            <h3 class="invisible hide">s</h3>
+                            <p>Mulund (West), Mumbai.</p>
+                            <p>+91-22-25690666</p>
+                        </div>
+                    </div>
+                    <div class="text_column col-12 col-sm-6 col-lg-3">
+                        <div>
+                            <h3>Email</h3>
+                            <p>chennai@pixel-studio.com</p>
+                            <p>marketing@pixel-studio.com</p>
+                        </div>
+                    </div>
+                    <div class="text_column col-12 col-sm-6 col-lg-3">
+                        <div>
+                            <h3>Follow Us</h3>
+                            <div class="social_media">
+                                <i class="bi bi-facebook"></i>
+                                <i class="bi bi-twitter"></i>
+                                <i class="bi bi-youtube"></i>
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                            <p>+91-44-22500588</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row copyrights">
+                    <p>Copyright © 2019 All Rights Reserved. Designed by Pixel Studios.</p>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+
+    <!------------ Javascript ----------->
+
+    <!--AOS JS Link-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
